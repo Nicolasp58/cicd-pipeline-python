@@ -1,4 +1,4 @@
-'''Archivo principal Flask para la calculadora.'''
+"""Archivo principal Flask para la calculadora."""
 
 # app/app.py
 from flask import Flask, render_template, request
@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    '''Maneja la ruta principal para mostrar el formulario.'''
+    """Maneja la ruta principal para mostrar el formulario."""
     resultado = None
     if request.method == "POST":
         try:
@@ -36,4 +36,4 @@ def index():
 
 
 if __name__ == "__main__":  # pragma: no cover
-    app.run(debug=True, port=5000, host="0.0.0.0")  
+    app.run(debug=True, port=5000, host="0.0.0.0")

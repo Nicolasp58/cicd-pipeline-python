@@ -1,25 +1,27 @@
-'''Módulo con funciones básicas de cálculo.'''
+"""Módulo con funciones básicas de cálculo."""
+
 # app/calculadora.py
 
-AUTORES = "npenaj, mquijanoj, dcmendozab, vjvilladia"  
+AUTORES = "npenaj, mquijanoj, dcmendozab, vjvilladia"
+
 
 def sumar(a, b):
-    '''Suma dos números.'''
+    """Suma dos números."""
     return a + b
 
 
 def restar(a, b):
-    '''Resta dos números.'''
+    """Resta dos números."""
     return a - b
 
 
 def multiplicar(a, b):
-    '''Multiplica dos números.'''
+    """Multiplica dos números."""
     return a * b
 
 
 def dividir(a, b):
-    '''Divide dos números.'''
+    """Divide dos números."""
     if b == 0:
         raise ZeroDivisionError("No se puede dividir por cero")
     return a / b
